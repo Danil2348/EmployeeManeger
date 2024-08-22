@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>EmployeeManeger.WEB_API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="5.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeManeger.Application\EmployeeManeger.Application.csproj" />
+    <ProjectReference Include="..\EmployeeManeger.Persistence\EmployeeManeger.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
