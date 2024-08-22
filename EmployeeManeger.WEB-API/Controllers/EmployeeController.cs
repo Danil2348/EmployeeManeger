@@ -31,7 +31,7 @@ namespace EmployeeManeger.WEB_API.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var employees = await _mediator.Send(new GetEmployeesAllQueryHandler());
+            var employees = await _mediator.Send(new GetEmployeesAllQuery());
             return Ok(employees);
         }
 
